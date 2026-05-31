@@ -1,0 +1,81 @@
+// ======================================================
+// GTA Los Santos (PS2)
+//
+// - Radar & UI color overhaul
+// - Menu selection highlight improvements
+// - Armor bar color (Blue)
+// - Reduced LOD distances for better performance
+// - Disabled intro video (open1.pss)
+// ======================================================
+
+// RADAR DISK COLOR 
+patch=1,EE,002ACC38,word,240500FF  // R
+patch=1,EE,002ACC3C,word,240600A3  // G
+patch=1,EE,002ACC40,word,240700C4  // B
+
+patch=1,EE,002ACC84,word,240500FF  // R
+patch=1,EE,002ACC88,word,240600A3  // G
+patch=1,EE,002ACC8C,word,240700C4  // B
+
+patch=1,EE,002ACCD0,word,240500FF  // R
+patch=1,EE,002ACCD4,word,240600A3  // G
+patch=1,EE,002ACCD8,word,240700C4  // B
+
+patch=1,EE,002ACD1C,word,240500FF  // R
+patch=1,EE,002ACD20,word,240600A3  // G
+patch=1,EE,002ACD24,word,240700C4  // B
+
+
+// display Button Selected 
+patch=0,EE,202428DC,extended,240500F5  //R
+patch=0,EE,202428E4,extended,240600BC  //G
+patch=0,EE,202428E8,extended,240700D1  //B
+
+// galery Button Selected 
+patch=0,EE,20242860,extended,240500F5  // R
+patch=0,EE,20242868,extended,240600BC  // G 
+patch=0,EE,2024286C,extended,240700D1  // B
+
+// Audio Button Selected 
+patch=0,EE,202427E4,extended,240500F5  // R
+patch=0,EE,202427EC,extended,240600BC  // G
+patch=0,EE,202427F0,extended,240700D1  // B
+
+// Controler Button Selected
+patch=0,EE,20242768,extended,240500F5  // R
+patch=0,EE,20242770,extended,240600BC  // G
+patch=0,EE,20242774,extended,240700D1  // B
+
+// Stats Button Selected
+patch=0,EE,202426EC,extended,240500F5  // R
+patch=0,EE,202426F4,extended,240600BC  // G
+patch=0,EE,202426F8,extended,240700D1  // B
+
+// Map Button Selected
+patch=0,EE,20242670,extended,240500F5  // R
+patch=0,EE,20242678,extended,240600BC  // G
+patch=0,EE,2024267C,extended,240700D1  // B
+
+// Brief Button Selected
+patch=0,EE,202425F4,extended,240500F5  // R
+patch=0,EE,202425FC,extended,240600BC  // G
+patch=0,EE,20242600,extended,240700D1  // B
+
+// Game Button Selected
+patch=0,EE,20242578,extended,240500F5  // R
+patch=0,EE,20242580,extended,240600BC  // G
+patch=0,EE,20242584,extended,240700D1  // B
+
+// No OPEN1.PSS
+patch=0,EE,00245920,word,00000000
+
+// LODs
+patch=0,EE,2066659C,extended,3F666666  // 0.9 
+patch=0,EE,206665A0,extended,3F19999A  // 0.6 
+patch=0,EE,206665A4,extended,3F666666  // Veh 0.9
+patch=0,EE,206665A8,extended,3F666666  // Peds 0.9
+
+[Armor Bar Color]
+patch=0,EE,002A9860,word,3C050089
+patch=0,EE,002A9868,word,24A5B880
+patch=0,EE,002A9870,word,24060003 // 3 = Blue
