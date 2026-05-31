@@ -79,3 +79,13 @@ patch=0,EE,206665A8,extended,3F666666  // Peds 0.9
 patch=0,EE,002A9860,word,3C050089
 patch=0,EE,002A9868,word,24A5B880
 patch=0,EE,002A9870,word,24060003 // 3 = Blue
+
+
+//====================================//
+//   Nothing interesting, seriously
+//====================================//
+//patch=1,EE,205FA480,extended,61206574
+//patch=1,EE,205FA484,extended,42206F6D
+//patch=1,EE,205FA488,extended,646E6572
+//patch=1,EE,205FA48C,extended,00000A61
+//patch=1,EE,205FA490,extended,00000000
